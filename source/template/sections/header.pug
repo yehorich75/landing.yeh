@@ -1,0 +1,24 @@
+header.header
+    .header__top
+        .container
+            .contacts
+                a.contact(href="tel:+380977105756")
+                    i.fas.fa-mobile-alt
+                    span.contact__text 0977105756
+                a.contact(href="mailto:info@business.cox")
+                    i.far.fa-envelope
+                    span.contact__text info@business.cox
+                a.facebook-icon(href="facebook.com")
+                    i.fab.fa-facebook-square
+                    
+    .header__bottom
+        .container
+            .logo: img.logo__picture(src="images/logo.png")
+            nav.nav
+            - var items = [ "Home", "About Us", "Our Approach", "Our Work"]
+                each item in items
+                    if item === 'Home'
+                        a.nav__link.nav__link--active(href="#") Item
+                    else
+                         a.nav__link(href="#") Item
+            a.button.header__button.button--red(href="#") Free Consultation
