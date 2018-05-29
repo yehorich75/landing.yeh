@@ -15,7 +15,7 @@ header.header
         .container
             .logo: img.logo__picture(src="images/logo.png")
             nav.nav
-                - var navLinkItems = [ "Home", "About Us", "Our Approach", "Our Work"]
+                - var navLinkItems = [ "Home", "About Us", "Our Approch", "Our Work"]
                 - var navLinkUrls = [ "home.html", "about.html", "approach.html", "work.html"]
                     each item, key in navLinkItems
                         a.nav__link(href="http://" + navLinkUrls[key] target="blank") #{navLinkItems[key]}
